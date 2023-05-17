@@ -10,7 +10,7 @@ class RomanNumeralsTest {
 
     @Test
     public void arabicToRomanConverter5ShouldBeV(){
-        assertEquals("V", romanNumeralsConverter.arabicToRomanConverter(5));
+        assertEquals("V", romanNumeralsConverter.calculateNumber(5));
     }
 
     @Test
@@ -20,43 +20,43 @@ class RomanNumeralsTest {
 
     @Test
     public void arabicToRomanConverter8ShouldBeVIII(){
-        assertEquals("VIII", romanNumeralsConverter.oneDigitArabicToRomanConverter(8 , 0 ));
+        assertEquals("VIII", romanNumeralsConverter.calculateNumber(8));
     }
 
     @Test
     public void arabicToRomanConverter9ShouldBeIX(){
-        assertEquals("IX", romanNumeralsConverter.oneDigitArabicToRomanConverter(9 , 0));
+        assertEquals("IX", romanNumeralsConverter.calculateNumber(9));
     }
 
     @Test
     public void arabicToRomanConverter4ShouldBeIV(){
-        assertEquals("IV", romanNumeralsConverter.oneDigitArabicToRomanConverter(4,0));
+        assertEquals("IV", romanNumeralsConverter.calculateNumber(4));
     }
 
     @Test
     public void arabicToRomanConverter30ShouldBeXXX(){
-        assertEquals("XXX", romanNumeralsConverter.oneDigitArabicToRomanConverter(30, 1 ));
+        assertEquals("XXX", romanNumeralsConverter.calculateNumber(30));
     }
     @Test
     public void arabicToRomanConverter40ShouldBeXL(){
-        assertEquals("XL", romanNumeralsConverter.oneDigitArabicToRomanConverter(40 , 1));
+        assertEquals("XL", romanNumeralsConverter.calculateNumber(40));
     }
     @Test
     public void arabicToRomanConverter39ShouldBeXXXIX(){
-        assertEquals("XXXIX", romanNumeralsConverter.separateDigit(39 ));
+        assertEquals("XXXIX", romanNumeralsConverter.calculateNumber(39));
     }
 
     @Test
     public void arabicToRomanConverter246ShouldBeCCXLVI(){
-        assertEquals("CCXLVI", romanNumeralsConverter.separateDigit(246 ));
+        assertEquals("CCXLVI", romanNumeralsConverter.calculateNumber(246));
     }
     @Test
     public void arabicToRomanConverter789ShouldBeDCCLXXXIX(){
-        assertEquals("DCCLXXXIX", romanNumeralsConverter.separateDigit(789 ));
+        assertEquals("DCCLXXXIX", romanNumeralsConverter.calculateNumber(789));
     }
     @Test
     public void arabicToRomanConverter2421ShouldBeMMCDXXI(){
-        assertEquals("MMCDXXI", romanNumeralsConverter.separateDigit(2421 ));
+        assertEquals("MMCDXXI", romanNumeralsConverter.calculateNumber(2421));
     }
 
 }
