@@ -1,8 +1,8 @@
 package se.salt.jfs.kata;
 
-public class RomanNumeralsConverter {
+public class ArabicToRomanNumbers {
 
-    int romanNumeralValues[] = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+    int ArabicNumeralValues[] = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
 
     public String arabicToRomanConverter(int num) {
 
@@ -28,10 +28,10 @@ public class RomanNumeralsConverter {
 
         String result = new String();
 
-        for (int number: romanNumeralValues) {
-            while (arabicNumber >= number){
-                result += arabicToRomanConverter(number);
-                arabicNumber -= number;
+        for (int arabicNumeralValue: ArabicNumeralValues) {
+            while (arabicNumber >= arabicNumeralValue){
+                result += arabicToRomanConverter(arabicNumeralValue);
+                arabicNumber -= arabicNumeralValue;
             }
         }
         return result;
